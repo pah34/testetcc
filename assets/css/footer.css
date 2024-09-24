@@ -1,0 +1,139 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F6DBFF;
+  padding: 20px 0 5px 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  margin-left: -100px;
+  margin-right: 200px;
+  padding-left: 0;
+  flex: 1;
+}
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  text-align: left;
+}
+.footer-left a {
+  margin-bottom: 4px;
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+.footer-left img {
+  margin-right: 6px;
+}
+.footer-left p {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+  font-size: 14px;
+}
+.footer-right label,
+.footer-right textarea,
+.footer-right .button {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+.footer-right textarea {
+  height: 60px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.footer-right .button {
+  background-color: #000;
+  color: #FFF;
+  padding: 6px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+}
+.footer-right .button:hover {
+  background-color: #444;
+}
+
+/* responsivo */
+@media (max-width: 1200px) {
+  .footer-left {
+    margin-left: 0;
+    margin-right: 50px;
+  }
+  .footer-container {
+    padding: 0 15px;
+  }
+  .footer-left p {
+    font-size: 13px;
+  }
+  .footer-right textarea {
+    height: 55px;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 5px 0 2px 0;
+  }
+  .footer-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .footer-left,
+  .footer-right {
+    margin: 0;
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .footer-left {
+    margin-top: 20px;
+  }
+  .footer-right {
+    display: none;
+  }
+  .footer-left p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-left p {
+    font-size: 11px;
+  }
+  footer {
+    padding: 3px 0 2px 0;
+  }
+}
+@media (max-width: 320px) {
+  .footer-left p {
+    font-size: 9px;
+  }
+}

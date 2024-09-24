@@ -1,0 +1,72 @@
+/* imagem */
+.container-img {
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.imagem {
+    flex: 1;
+    margin: 0 20px;
+    height: 0;
+    padding-top: 25%;
+    position: relative;
+}
+.imagem img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+}
+/* botao */
+.button-container {
+    text-align: center;
+    margin-top: -60px;
+}
+.rectangle-button {
+    background-color: #F6DBFF;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 160px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+.rectangle-button:hover {
+    background-color: #e3b7ff;
+}
+
+/* responsivo */
+@media (max-width: 768px) {
+    .container-img {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding-top: 5%;
+    }
+    .imagem {
+        width: 80vw;
+        padding-top: 80vw;
+        margin: 2px 0;
+        transform: translate(2%, -2%);
+    }
+    .button-container {
+        text-align: center;
+        margin-top: -30px;
+    }
+    .rectangle-button {
+        width: 90vw;
+        padding: 15px;
+        font-size: 16px;
+    }
+}
